@@ -3,82 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
-    <div class="wrap container">
-        <div class="main-hero">
-            <div class="header clearfix">
-                <div class="logo">
+    <div class="main-hero">
+        <div class="main-hero__header">
+            <div class="container clearfix">
+                <div class="main-hero__logo">
                     <a href="/">
-                        <p>Sit <span class="main-highlight">on</span> chair</p>
+                        <h1>Sit <span class="main-hero__highlight">on</span> chair</h1>
                     </a>
                 </div>
-                <div class="main-nav">
-                    <ul class>
+                <nav class="main-hero__nav">
+                    <ul>
                         <li>
-                            <a class="main-link" href="/">o firmie</a>
-                            <ul>
-                                <li><div></div></li>
-                                <li class="main-submenu-arrow"></li>
+                            <a class="main-hero__link" href="#">o firmie</a>
+                            <ul class="main-hero__submenu">
                                 <li>
-                                    <a class="main-sublink" href="/">Aktualności</a>
+                                    <a class="main-hero__sublink" href="#">Aktualności</a>
                                 </li>
                                 <li>
-                                    <a class="main-sublink" href="/">Nasz team</a>
+                                    <a class="main-hero__sublink" href="#">Nasz team</a>
                                 </li>
                                 <li>
-                                    <a class="main-sublink" href="/">Historia</a>
+                                    <a class="main-hero__sublink" href="#">Historia</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a class="main-link" href="/">galeria</a>
+                            <a class="main-hero__link" href="#">galeria</a>
                         </li>
                         <li>
-                            <a class="main-link" href="/">kontakt</a>
+                            <a class="main-hero__link" href="#">kontakt</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
-            <div class="main-banner">
-                <div class="banner-arrow">
-                    <h1>&lt;</h1>
-                </div>
-                <div class="banner-img">
+        </div>
+        <div class="main-hero__banner">
+            <div class="container main-hero__slider">
+                <button type="button" class="main-hero__slider-prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <div class="main-hero__banner-img">
                     <img src="images/black_chair.png" alt="">
                 </div>
-                <div class="banner-text-box">
-                    <h1 class="banner-title">Sit <span class="main-highlight">on</span> our <span class="main-highlight">chair</span></h1>
-                    <p class="banner-text">
+                <div class="main-hero__banner-text-box">
+                    <h1 class="main-hero__banner-title">Sit <span class="main-hero__highlight">on</span> our <span class="main-hero__highlight">chair</span></h1>
+                    <p class="main-hero__banner-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Commodi consectetur consequatur consequuntur delectus, dignissimos error fugit
                         harum itaque maiores modi necessitatibus nisi nobis odit rem repellat rerum,
                         sint totam!
                     </p>
-                    <a class="banner-btn" href="/">zobacz więcej</a>
+                    <a class="main-hero__btn--banner" href="#">zobacz więcej</a>
                 </div>
-                <div class="banner-arrow">
-                    <h2>&gt;</h2>
-                </div>
+                <button type="button" class="main-hero__slider-next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
-        <section class="main-section">
-            <div class="section-photo-1">
-                <div class="section-photo-text">
-                    <p class="main-underline">Chair CLAIR</p>
+    </div>
+    <section class="main-section container">
+            <div class="main-section__photo-1">
+                <div class="main-section__photo-text">
+                    <p>Chair CLAIR</p>
                 </div>
             </div>
-            <div class="section-photo-2">
-                <div class="section-photo-text">
-                    <p class="main-underline">Chair MARGARITA</p>
+            <div class="main-section__photo-2">
+                <div class="main-section__photo-text">
+                    <p>Chair MARGARITA</p>
                 </div>
             </div>
-            <div class="section-text-box">
+            <div class="main-section__text-box">
                 <p class="main-underline">Finds all inputs</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Alias corporis doloremque maiores nisi odit quas quis sapiente similique? Animi,
                     aperiam
                 </p>
@@ -88,39 +90,137 @@
                 </p>
             </div>
         </section>
-        <section class="sub-section">
-        
-        </section>
-        <div class="section-form">
-            .
-            <p class="main-underline">Kontakt</p>
-            <form class="form" novalidate action="http://google.pl" method="post">
-                <div class="form-row">
+    <section class="sub-section">
+        <div class="container">
+            <div class="sub-section__header">
+                <h1>Cennik</h1>
+            </div>
+            <div class="sub-section__prices">
+                <div class="sub-section__box">
+                    <div class="sub-section__circle--border-1">
+                        <div class="sub-section__circle--border-2"></div>
+                    </div>
+                    <h1 class="sub-section__box-title">Basic plan</h1>
+                    <div class="sub-section__circle--inside">
+                        <strong class="sub-section__price">
+                            <span class="sub-section__price--big">85</span>
+                            <sup class="sub-section__price--small">99</sup>
+                        </strong>
+                        <div class="sub-section__price-text">PLN / MSC</div>
+                    </div>
+                    <div class="sub-section__list">
+                        <ul>
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                        </ul>
+                    </div>
+                    <a class="sub-section__btn" href="#">Dołącz</a>
+                </div>
+                <div class="sub-section__box active">
+                    <div class="sub-section__circle--border-1">
+                        <div class="sub-section__circle--border-2"></div>
+                    </div>
+                    <h1 class="sub-section__box-title">Standard plan</h1>
+                    <div class="sub-section__circle--inside">
+                        <strong class="sub-section__price">
+                            <span class="sub-section__price--big">95</span>
+                            <sup class="sub-section__price--small">99</sup>
+                        </strong>
+                        <div class="sub-section__price-text">PLN / MSC</div>
+                    </div>
+                    <div class="sub-section__list">
+                        <ul>
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                            <li>Gwarancja 5 lat</li>
+                        </ul>
+                    </div>
+                    <a class="sub-section__btn" href="#">Dołącz</a>
+                </div>
+                <div class="sub-section__box">
+                    <div class="sub-section__circle--border-1">
+                        <div class="sub-section__circle--border-2"></div>
+                    </div>
+                    <h1 class="sub-section__box-title">Advance plan</h1>
+                    <div class="sub-section__circle--inside">
+                        <strong class="sub-section__price">
+                            <span class="sub-section__price--big">211</span>
+                            <sup class="sub-section__price--small">00</sup>
+                        </strong>
+                        <div class="sub-section__price-text">PLN / MSC</div>
+                    </div>
+                    <div class="sub-section__list">
+                        <ul>
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                            <li>Gwarancja 6 lat</li>
+                            <li>Porady projektanta</li>
+                        </ul>
+                    </div>
+                    <a class="sub-section__btn" href="#">Dołącz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-form container">
+        <div class="section-form__col-1">
+            <div class="section-form__headline">
+                <h1>Kontakt</h1>
+            </div>
+            <form class="section-form__form" novalidate action="http://google.pl" method="post">
+                <div class="section-form__form-row">
                     <label for="name" class="visuallyhidden">Wpisz imię:</label>
                     <input type="text" required pattern="[a-z]{2,3}" name="formName" id="name" placeholder="Imię">
                 </div>
-                <div class="form-row">
+                <div class="section-form__form-row">
                     <label for="email" class="visuallyhidden">Wpisz email:</label>
                     <input type="email" required pattern="[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}" name="formEmail" id="email" placeholder="Email">
                 </div>
-                <div class="form-row">
+                <div class="section-form__form-row">
                     <label for="message" class="visuallyhidden">Wpisz wiadomość:</label>
                     <textarea name="formMessage" id="message" placeholder="Wiadomość"></textarea>
                 </div>
-                <div class="form-row">
-                    <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox-icon"></span>
-                    </label>
-                </div>
-                <div class="form-row">
-                    <button type="submit" class="button">
-                        Wyślij
-                    </button>
-                </div>
             </form>
         </div>
-    </div>
-
+        <div class="section-form__col-2">
+            <div>
+                <img src="images/red_chair.png" alt="">
+            </div>
+            <div class="section-form__accept-terms">
+                <label class="section-form__checkbox">
+                    <input type="checkbox">
+                    <span class="section-form__checkbox--icon"></span>
+                    <span class="section-form__regulation">Zgadzam się na przetwarzanie danych osobowych</span>
+                </label>
+            </div>
+                <button class="section-form__btn--form button" type="submit" >
+                    Wyślij
+                </button>
+        </div>
+    </section>
+    <footer class="main-footer container">
+        <div class="main-footer__copyright">
+            <h1>Copyright 2014 | All Rights Reserved. - Sit On Chair</h1>
+        </div>
+        <div class="main-footer__logo">
+            <a href="/">
+                <h1>Sit <span>on</span> chair</h1>
+            </a>
+        </div>
+        <div class="main-footer__links">
+            <a href="#">
+                <img src="images/flickr.png" alt="">
+            </a>
+            <a href="#">
+                <img src="images/vimeo.png" alt="">
+            </a>
+            <a href="#">
+                <img src="images/pinterest.png" alt="">
+            </a>
+            <a href="#">
+                <img src="images/twitter.png" alt="">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
